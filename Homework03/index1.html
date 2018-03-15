@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Homework-Week03</title>
+ <meta name="description" content="Homework-Week03">
+ <meta name="author" content="SitePoint">
+   <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+
+<body>
+    
+    <header>
+        <p class="logo">Logo</p>
+        <p class="navigation"><a href="index2.html">Go to next</a></p>
+    </header> 
+
+    <h1>Sign up to your customtailor.com</h1>
+    <h1 class="stepsheading">
+            Step 2/4-tell us who you are?   
+    </h1>
+    <form action="index2.html" method="get">
+
+        <div class="label1 labels">
+            <label for="progress">Progress</label>
+            <progress max="4" value="1" id="progress">1/4</progress>
+        </div>
+        <p>Let us know how we can reach you:</p>
+            <div class="form2">
+                <div class="labels mail">
+                    <label for="mail">Email*</label>
+                    <input type="email" id="mail" name="customer_email" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                    required>
+                </div>
+
+                <div class="labels phone">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="customer_phone" minlength="8" maxlength="12" pattern="^[0-9]*$" title="Please enter only digits ">
+                    </div>
+            
+                <div class="labels pass">
+                    <label for="pwd">Password*</label>
+                    <input type="password" id="pwd" name="customer_pwd" minlength="10" pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character." required>
+                </div>
+
+                <div class="labels repass">
+                    <label for="repwd">Re-enter Password*</label>
+                    <input type="password" id="repwd" name="customer_pwd" minlength="10" pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character." required>
+                </div>
+
+            
+                <p>
+                    I want to sign up for the newsletter
+                </p>
+                
+                <div class="labels radioopt"> 
+                    <label for="weekly">Weekly news</label>
+                    <input type="radio" checked id="weekly" name="news" value="weekly">
+                    
+                    <label for="monthly">Monthly news</label>
+                    <input type="radio" id="monthly" name="news" value="monthly">
+                    
+                    <label for="nonews">Do not send me any news</label>
+                    <input type="radio" id="nonews" name="news" value="nonews">
+                </div>   
+            </div>
+            <div class="next save">
+                    <button type="submit">Save</button>
+           </div>
+        </form>
+    </body>
+</html>

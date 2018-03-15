@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Homework-Week03</title>
+ <meta name="description" content="Homework-Week03">
+ <meta name="author" content="SitePoint">
+   <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+    <body>
+        <header>
+            <p class="logo">Logo</p>
+            <p class="navigation"><a href="index.html">Go to first step</a></p>
+        </header> 
+
+        <h1>Sign up to your customtailor.com</h1>
+        <h1 class="stepsheading">
+                Step 4/4 - Payment
+        </h1>
+        <form action="index.html" method="get">
+            <div class="label1 labels">
+                <label for="progress">Progress</label>
+                <progress max="4" value="3" id="progress">3/4</progress>
+            </div>
+            <p>Please fill in your payment data</p>
+            <div class="form4">
+                <div class="labels cardname">
+                    <label for="CardName">Name on card*</label>
+                    <input type="text" id="CardName" name="customer_cardname" required>
+                </div>
+                <div class="labels cardtype">
+                    <label for="CardType">Card type*</label>
+                    <select id="CardType" name="customer_cardtype">
+                        <option>Master</option>
+                        <option>Visa</option>
+                        <option>Maestro</option>
+                    </select>
+                </div>
+                <div class="labels cardnumber">
+                    <label for="CardNumber">Credit card number*</label>
+                    <input type="text" id="CardNumber" name="customer_cardnumber" minlength="16" maxlength="16" pattern="^[0-9]*$" title="please enter a 16 digit card number" required >
+                </div>
+                <div class="labels firstn">
+                    <label for="firstname">First name</label>
+                    <input type="text" id="firstname" name="customer_firstname">
+                </div>
+                <div class="samerow">
+                    <div class="labels month">
+                        <label for="exmonth">Expiry month*</label>
+                        <input type="number" id="exmonth" name="expiry_month" min="01" max="12" required>
+                    </div>
+                    <div class="labels year">
+                        <label for="exyear">Expiry year*</label>
+                        <input type="number" id="exyear" name="expiry_year" min="18" max="30" required>
+                    </div>
+                </div>
+                <div class="labels cvv">
+                    <label for="cvv">cvv*</label>
+                    <input type="text" id="cvv" name="cvv_number" minlength="3" maxlength="3" pattern="^[0-9]*$" title="Please enter a 3 digit CVV number" required>
+                </div>
+            </div>
+            <div class="next">
+                <button type="submit">Save</button>
+           </div>
+        </form>
+    </body>
+</html>
+        
+
